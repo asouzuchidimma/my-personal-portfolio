@@ -303,6 +303,9 @@ p, li {
   margin-bottom: 2.5rem;          
   padding-bottom: 1.5rem;         
   border-bottom:none; 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
 }
 
 /* Remove border on the last section block in a column */
@@ -438,7 +441,7 @@ p, li {
 #contact-form {
   max-width: 100%;
   background: #000;
-  padding: 50px;
+  padding: 30px;
   border-radius: 10px;
   color: #fff;
   margin-top: 10px;
@@ -477,6 +480,7 @@ p, li {
   width: 50%;
   transition: background 0.3s, border 0.3s;
 }
+
 
 #contact-form button#send-btn:hover {
   background: #3552ba;
@@ -671,4 +675,27 @@ textarea:not(:placeholder-shown) + .floating-label {
   color: #58b4ff;
   font-style: oblique;
 letter-spacing: 1px;
+}
+#projects{
+  text-align: justify;
+}
+#about-preview{
+text-align: justify;
+padding-left: 2rem;
+padding-right: 2rem;
+}
+#project-preview{
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.contact-section{
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.banner{
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
