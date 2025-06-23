@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faith Portfolio</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top bg-black shadow">
+  <div class="container-fluid px-5">
+    <a href="#" class="navbar-brand">
+      <img src="assets/FAITH LOGO.png" alt="Logo" style="width: 48px;" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-lg-4">
+        <li class="nav-item"><a class="nav-link  text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active text-white" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="main.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="contact-section py-5"> 
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="text-light fw-bold">Let's Connect</h1>
+      <p class="text-secondary">
+        I’m always learning and open to new ideas, collaborations. Have an idea, project, or feedback? Drop me a message 
+      </p>
+    </div>
+
+    <div class="row align-items-start ">
+      <!-- Contact Info Left -->
+      <div class="col-md-6 mb-5 text-light">
+  <ul class="list-unstyled ps-md-3 ps-0">
+    <li class="mt-5 d-flex align-items-start flex-wrap gap-3">
+      <div class="contact-icon">
+        <i class="bi bi-house-fill"></i>
+      </div>
+      <div>
+        <h5 class="fw-bold text-secondary mb-1">Address</h5>
+        <p class="mb-0">Dove Heaven Avenue Eliozu,<br>Portharcourt, Nigeria</p>
+      </div>
+    </li>
+
+    <li class="mt-5 d-flex align-items-start flex-wrap gap-3">
+      <div class="contact-icon">
+        <i class="bi bi-telephone-fill"></i>
+      </div>
+      <div>
+        <h5 class="fw-bold text-secondary mb-1">Phone</h5>
+        <p class="mb-0">+234 814 544 9102</p>
+      </div>
+    </li>
+
+    <li class="mt-5 d-flex align-items-start flex-wrap gap-3">
+      <div class="contact-icon">
+        <i class="bi bi-envelope-fill "></i>
+      </div>
+      <div>
+        <h5 class="fw-bold text-primary mb-1 text-secondary">Email</h5>
+        <p class="mb-0">
+  <a href="mailto:asouzuchidimma2@gmail.com" class=" email-link ">asouzuchidimma2@gmail.com</a>
+</p>
+
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="col-md-7 col-lg-6 mx-auto">
+  <div class="card p-4 shadow-lg">
+    <h4 class="mb-4 fw-bold text-secondary text-center">Send Message</h4>
+
+    <!-- Success Message -->
+    <div id="success-msg" class="alert alert-success d-none" role="alert">
+      ✅ Message sent successfully!<br>
+      <button id="send-another-btn" class="btn btn-outline-light btn-sm mt-3">
+        <i class="bi bi-arrow-repeat me-2"></i> Send Another Message
+      </button>
+    </div>
+
+<!-- Error Message -->
+<div id="error-msg" class="alert alert-danger d-none" role="alert">
+  <strong>Oops!</strong> Something went wrong. Please check your internet connection and try again.
+</div>
+
+    <!-- Try Again Button -->
+    <button id="try-again-btn" class="btn btn-danger d-none mb-3">Try Again</button>
+
+    <!-- Form  -->
+    <div id="form-container">
+      <form id="contact-form" novalidate>
+        <div class="form-group position-relative mb-4">
+          <input type="text" id="name" name="name" class="form-control" placeholder=" " required>
+          <label for="name" class="floating-label">Name <span class="text-danger">*</span></label>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+
+        <div class="form-group position-relative mb-4">
+          <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+          <label for="email" class="floating-label">Email <span class="text-danger">*</span></label>
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+
+        <div class="form-group position-relative mb-4">
+          <textarea id="message" name="message" class="form-control" placeholder=" " required></textarea>
+          <label for="message" class="floating-label">Message <span class="text-danger">*</span></label>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-3 gap-5">
+  <button type="submit" id="send-btn" class="btn btn-primary">
+    <span id="btn-text">Send</span>
+    <span id="spinner" class="spinner-border spinner-border-sm d-none ms-2" role="status" aria-hidden="true"></span>
+  </button>
+  
+  <button type="button" id="cancel-btn" class="btn btn-danger">Clear</button>
+</div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("goFc3vMBEeAFI_J9t");
+  })();
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const formContainer = document.getElementById("form-container");
+    const sendBtn = document.getElementById("send-btn");
+    const btnText = document.getElementById("btn-text");
+    const spinner = document.getElementById("spinner");
+    const successMsg = document.getElementById("success-msg");
+    const errorMsg = document.getElementById("error-msg");
+    const tryAgainBtn = document.getElementById("try-again-btn");
+    const sendAnotherBtn = document.getElementById("send-another-btn");
+    const cancelBtn = document.getElementById("cancel-btn"); 
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      form.classList.add("was-validated");
+
+      if (!form.checkValidity()) {
+        return;
+      }
+
+      spinner.classList.remove("d-none");
+      btnText.textContent = "Sending...";
+      sendBtn.disabled = true;
+
+      setTimeout(() => {
+        emailjs.sendForm("service_wrgyzi2", "template_8i1tk2i", form)
+          .then(() => {
+            form.reset();
+            form.classList.remove("was-validated");
+            formContainer.classList.add("d-none");
+            successMsg.classList.remove("d-none");
+            spinner.classList.add("d-none");
+            btnText.textContent = "Send";
+            sendBtn.disabled = false;
+          })
+          .catch(() => {
+            formContainer.classList.add("d-none");
+            errorMsg.classList.remove("d-none");
+            tryAgainBtn.classList.remove("d-none");
+            spinner.classList.add("d-none");
+            btnText.textContent = "Send";
+            sendBtn.disabled = false;
+          });
+      }, 600);
+    });
+
+    sendAnotherBtn.addEventListener("click", function () {
+      successMsg.classList.add("d-none");
+      formContainer.classList.remove("d-none");
+      btnText.textContent = "Send";
+      spinner.classList.add("d-none");
+      sendBtn.disabled = false;
+    });
+
+    tryAgainBtn.addEventListener("click", function () {
+      errorMsg.classList.add("d-none");
+      tryAgainBtn.classList.add("d-none");
+      formContainer.classList.remove("d-none");
+    });
+
+    // ✅ Cancel button 
+    cancelBtn.addEventListener("click", function () {
+      form.reset();
+      form.classList.remove("was-validated");
+    });
+  });
+</script>
+
+
+<!-- Footer -->
+<footer class="custom-footer text-white mt-5 w-100 py-4 px-3 mb-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left: Logo + Name -->
+      <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start">
+        <img src="assets/FAITH LOGO.png" alt="Logo" style="width: 40px;">
+        <span class="ms-2 fw-bold">Asouzu Faith</span>
+      </div>
+
+      <!-- Center: Social Icons -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex justify-content-center gap-3">
+        <a href="https://github.com/asouzuchidimma" target="_blank" class="footer-icon text-white">
+          <i class="bi bi-github fs-5"></i>
+        </a>
+        <a href="https://twitter.com/faithChi29" target="_blank" class="footer-icon text-white">
+          <i class="bi bi-twitter fs-5"></i>
+        </a>
+        <a href="mailto:asouzuchidimma2@gmail.com" class="footer-icon text-white">
+          <i class="bi bi-envelope-fill fs-5"></i>
+        </a>
+      </div>
+
+      <!-- Right: Copyright -->
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <small>&copy; 2025 Asouzu Faith. All rights reserved.</small>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+          
