@@ -1,31 +1,35 @@
-#  Asouzu Faith - Portfolio Website
+# 💻 Asouzu Faith - Portfolio Website
 
-Welcome to my personal portfolio! This project showcases my frontend development journey, skills, and selected projects. It's built to demonstrate my passion for clean design, responsive layouts, and continuous learning.
+Welcome to my personal portfolio! This project showcases my frontend development journey, skills, and selected projects. It's designed to reflect my passion for clean design, responsive layouts, and continuous learning.
 
-## Live Site
+## 🌐 Live Site
 🔗 [View Portfolio](https://asouzuchidimma.github.io/my-personal-portfolio/)
 
-##  Preview
-![Screenshot](assets/image.png) 
+## 📸 Preview
+[![Screenshot](assets/preview.png)](https://asouzuchidimma.github.io/my-personal-portfolio/)
 
-##  Technologies Used
+## 🛠️ Technologies Used
 - HTML5  
 - CSS3  
 - Bootstrap  
 - JavaScript  
 - EmailJS (for contact form functionality)
 
-##  Pages
+## 📄 Pages
 - `index.html` – Home  
 - `about.html` – About Me  
-- `projects.html` – My Projects  
+- `projects.html` – Projects  
 - `skills.html` – Skills  
-- `contact.html` – Contact Form
-- `main.html` – porfolio
+- `contact.html` – Contact  
+- `main.html` – Portfolio Overview
 
-##  Contact
+## ✨ Features
+- Smooth scrolling and fade-in animations  
+- Fully responsive layout  
+- Project previews with live working links  
+- Functional contact form powered by EmailJS
+
+## 📬 Contact
 Feel free to reach out via the [Contact Page](https://asouzuchidimma.github.io/my-personal-portfolio/contact.html)  
-Or connect on [GitHub](https://asouzuchidimma.github.io/my-personal-portfolio/)
-
----
+Or connect with me on [GitHub](https://github.com/asouzuchidimma)
 
