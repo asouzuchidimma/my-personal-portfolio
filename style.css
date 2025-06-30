@@ -7,7 +7,8 @@ html {
 body {
   background-color: #000;
   color: #c9d1d9;
-  font-family: 'Poppins', sans-serif; ;
+  font-family: 'Poppins', sans-serif;
+  ;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -58,7 +59,8 @@ body {
   padding: 8px 12px;
   border-radius: 5px;
 }
-.navbar-toggler:hover{
+
+.navbar-toggler:hover {
   background-color: #444;
   border-radius: 5px;
 }
@@ -67,6 +69,7 @@ body {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 .nav-link {
   position: relative;
   padding-bottom: 4px;
@@ -101,8 +104,15 @@ body {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Image styling */
@@ -121,50 +131,61 @@ body {
   text-shadow: 0 0 10px #58a6ff, 0 0 20px rgba(88, 166, 255, 0.6);
   transition: text-shadow 0.3s ease;
 }
-.home-bold{
+
+.home-bold {
   font-size: 20px;
 }
+
 /* Headings */
-h1{
+h1 {
   font-family: 'bebas neue';
   font-size: 100px;
 
 }
+
 h2 {
-   font-family: 'bebas neue';
-   font-size: 80px;
+  font-family: 'bebas neue';
+  font-size: 80px;
 }
 
 h5 {
   font-family: 'bebas neue';
-font-size: 40px;
+  font-size: 40px;
 }
-h4{
+
+h4 {
   font-family: 'bebas neue';
   font-size: 40px;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
 }
+
 h3 {
   font-family: 'bebas neue';
-letter-spacing: 2px; 
+  letter-spacing: 2px;
 }
 
 
-body, p, span, strong, li, a {
+body,
+p,
+span,
+strong,
+li,
+a {
   font-family: 'Poppins', sans-serif;
- 
+
 }
 
 
 /* Paragraphs */
-p, li {
+p,
+li {
   color: #d1d5db;
   list-style-type: none;
 }
 
 /* Resume Button */
 .btn-outline-light {
-  background-color:#4169e1;
+  background-color: #4169e1;
   color: white;
   border: 2px solid #4169e1;
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -176,7 +197,7 @@ p, li {
 }
 
 .btn-outline-light:hover {
-  background-color:#3552ba ;
+  background-color: #3552ba;
   border-color: #4169e1;
   color: #ffffff;
 }
@@ -212,7 +233,7 @@ p, li {
   border-radius: 200px;
   border-color: #4169e1;
   text-decoration: none;
-  
+
 }
 
 /* Image Fluid */
@@ -231,7 +252,7 @@ p, li {
 =======================*/
 #skills {
   padding: 60px 20px;
-  background-color: #000000; 
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -284,13 +305,13 @@ p, li {
   margin-bottom: 4px;
 }
 
-.soft-skills-list span { 
+.soft-skills-list span {
   display: block;
   font-size: 0.95rem;
 }
 
 /* Card Background */
-.bg-soft-dark { 
+.bg-soft-dark {
   background-color: #161b22;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -300,9 +321,9 @@ p, li {
 
 /* Section blocks styling */
 .section-block {
-  margin-bottom: 2.5rem;          
-  padding-bottom: 1.5rem;         
-  border-bottom:none; 
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: none;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: justify;
@@ -315,25 +336,26 @@ p, li {
 
 /* Headings inside section blocks */
 .section-block h3 {
-  color: #ffffff;      
-  margin-bottom: 1rem; 
-  font-weight: 600;    
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 /* Paragraph text inside section blocks */
 .section-block p,
 .section-block ul li {
-  color: #ddd;         
-  line-height: 1.6;    
+  color: #ddd;
+  line-height: 1.6;
 }
 
 /* Links inside the section blocks */
- .section-block a { 
-  color: white;      
+.section-block a {
+  color: white;
   text-decoration: none;
   background-color: #4169e1;
   padding: 20px 30px;
 }
+
 .section-block a:hover {
   background-color: #3552ba;
 }
@@ -373,8 +395,9 @@ p, li {
   color: #888;
   font-size: 0.9rem;
 }
+
 .social-icon {
-  background-color:#4169e1;
+  background-color: #4169e1;
   color: #ffffff;
   border: 1px solid #58a6ff;
   border-radius: 50%;
@@ -395,8 +418,8 @@ p, li {
   color: #ffffff;
   box-shadow: 0 0 12px #58a6ff, 0 0 20px rgba(88, 166, 255, 0.6);
   transform: scale(1.2);
-   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-} 
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
 
 
 /* Footer styles */
@@ -437,6 +460,7 @@ p, li {
   color: #000;
   transition: transform 0.35s cubic-bezier(0.22, 1.5, 0.36, 1);
 }
+
 /* Contact form Styles */
 #contact-form {
   max-width: 100%;
@@ -486,18 +510,19 @@ p, li {
   background: #3552ba;
   border: 1px #4169e1 solid;
 }
- 
-  .success-message {
-    text-align: center;
-    margin-top: 10px;
-    color: #00e676;
-  }
 
-  .error-message {
-    text-align: center;
-    margin-top: 10px;
-    color: #ff1744;
-  }
+.success-message {
+  text-align: center;
+  margin-top: 10px;
+  color: #00e676;
+}
+
+.error-message {
+  text-align: center;
+  margin-top: 10px;
+  color: #ff1744;
+}
+
 /* Style for contact icons */
 .contact-icon {
   font-size: 1.5rem;
@@ -506,7 +531,8 @@ p, li {
   padding: 10px;
   border-radius: 50%;
   display: inline-block;
-} 
+}
+
 /* Intro Section */
 .intro-section {
   min-height: 100vh;
@@ -515,7 +541,8 @@ p, li {
   justify-content: center;
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #000; /* keep your black bg */
+  background-color: #000;
+  /* keep your black bg */
   overflow: hidden;
 }
 
@@ -578,12 +605,12 @@ p, li {
 
 @media (max-width: 767.98px) {
   .hero-img {
-    margin-top: -100px; 
-    max-height: 380px;  
+    margin-top: -100px;
+    max-height: 380px;
   }
 
   .intro-section {
-    padding-top: 1rem; 
+    padding-top: 1rem;
   }
 }
 
@@ -605,11 +632,13 @@ p, li {
     opacity: 0;
     transform: translateY(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .hero-img {
   max-width: 100%;
   height: auto;
@@ -617,13 +646,13 @@ p, li {
 }
 
 
-.email-link{
+.email-link {
   text-decoration: underline;
   color: #c9d1d9;
   font-size: 20px;
 }
 
-.email-link:hover{
+.email-link:hover {
   color: #4169e1;
 }
 
@@ -631,22 +660,23 @@ p, li {
 .form-group {
   position: relative;
 }
+
 .floating-label {
   position: absolute;
-  top: 0.75rem; 
+  top: 0.75rem;
   left: 0.75rem;
   pointer-events: none;
   transition: 0.2s ease all;
   color: #aaa;
   font-size: 0.9rem;
-  background-color: transparent; 
+  background-color: transparent;
   padding: 0 4px;
 }
 
-.form-control:focus + .floating-label,
-.form-control:not(:placeholder-shown) + .floating-label,
-textarea:focus + .floating-label,
-textarea:not(:placeholder-shown) + .floating-label {
+.form-control:focus+.floating-label,
+.form-control:not(:placeholder-shown)+.floating-label,
+textarea:focus+.floating-label,
+textarea:not(:placeholder-shown)+.floating-label {
   top: -10px;
   left: 10px;
   font-size: 0.75rem;
@@ -657,48 +687,55 @@ textarea:not(:placeholder-shown) + .floating-label {
 
 
 /* Invalid feedback */
-.was-validated .form-control:invalid ~ .invalid-feedback,
-.was-validated textarea:invalid ~ .invalid-feedback {
+.was-validated .form-control:invalid~.invalid-feedback,
+.was-validated textarea:invalid~.invalid-feedback {
   display: block;
   font-size: 0.85rem;
 }
 
- /* Input spacing  */
+/* Input spacing  */
 .form-control {
   padding-top: 1.5rem;
 }
-#cancel-btn{
-  width:50%;
+
+#cancel-btn {
+  width: 50%;
 }
 
-.click-me{
+.click-me {
   color: #58b4ff;
   font-style: oblique;
-letter-spacing: 1px;
+  letter-spacing: 1px;
 }
-#projects{
+
+#projects {
   text-align: justify;
 }
-#about-preview{
-text-align: justify;
-padding-left: 2rem;
-padding-right: 2rem;
-}
-#project-preview{
+
+#about-preview {
   text-align: justify;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.contact-section{
+
+#project-preview {
   text-align: justify;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.banner{
+
+.contact-section {
   text-align: justify;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.coding-journey{
+
+.banner {
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.coding-journey {
   padding-bottom: 5rem;
 }
